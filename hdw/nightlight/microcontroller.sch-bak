@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:nightlight-cache
 EELAYER 30 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -315,4 +316,8 @@ Text GLabel 4340 6450 2    50   Output ~ 0
 Wire Wire Line
 	4090 6450 4340 6450
 Connection ~ 4090 6450
+Text GLabel 4650 2850 0    50   Input ~ 0
+Cap_Touch_Power
+Text GLabel 4650 3150 0    50   Output ~ 0
+led_pwm
 $EndSCHEMATC
