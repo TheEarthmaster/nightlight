@@ -355,4 +355,19 @@ Wire Wire Line
 	3180 4100 3180 3000
 Wire Wire Line
 	3180 3000 3680 3000
+$Comp
+L Custom_Library:TP TP?
+U 1 1 5D91A0E6
+P 7030 3300
+AR Path="/5D8184C1/5D91A0E6" Ref="TP?"  Part="1" 
+AR Path="/5D6768C8/5D91A0E6" Ref="TP301"  Part="1" 
+F 0 "TP301" H 7030 3450 50  0000 C CNN
+F 1 "TP" H 7030 3450 50  0001 C CNN
+F 2 "Custom Footprints Library:Test_Point" H 7030 3300 60  0001 C CNN
+F 3 "" H 7030 3300 60  0000 C CNN
+	1    7030 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7030 3500 7030 3300
 $EndSCHEMATC

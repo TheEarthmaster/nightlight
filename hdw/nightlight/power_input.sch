@@ -276,7 +276,7 @@ F 4 "LTC4365IDDB#TRMPBFCT-ND" H 5870 4060 50  0001 C CNN "Digi-Key PN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7070 2240 8260 2240
+	7070 2240 7750 2240
 $Comp
 L Custom_Library:IPC100N04S51R7ATMA1 Q701
 U 1 1 5BED5FAB
@@ -613,4 +613,55 @@ F 4 "478-7997-1-ND" H 9010 2470 50  0001 C CNN "Digi-Key PN"
 	1    9010 2470
 	1    0    0    -1  
 $EndComp
+$Comp
+L Custom_Library:TP TP701
+U 1 1 5D91515D
+P 2140 4070
+F 0 "TP701" H 2140 4220 50  0000 C CNN
+F 1 "TP" H 2140 4220 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 2140 4070 60  0001 C CNN
+F 3 "" H 2140 4070 60  0000 C CNN
+	1    2140 4070
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0717
+U 1 1 5D9158C3
+P 2140 4070
+F 0 "#PWR0717" H 2140 3820 50  0001 C CNN
+F 1 "GND" H 2140 3920 50  0000 C CNN
+F 2 "" H 2140 4070 50  0001 C CNN
+F 3 "" H 2140 4070 50  0001 C CNN
+	1    2140 4070
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:TP TP702
+U 1 1 5D915C56
+P 4410 2170
+F 0 "TP702" H 4410 2320 50  0000 C CNN
+F 1 "TP" H 4410 2320 50  0001 C CNN
+F 2 "Custom Footprints Library:Test_Point" H 4410 2170 60  0001 C CNN
+F 3 "" H 4410 2170 60  0000 C CNN
+	1    4410 2170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4410 2170 4410 2240
+$Comp
+L Custom_Library:TP TP703
+U 1 1 5D917645
+P 7750 2180
+F 0 "TP703" H 7750 2330 50  0000 C CNN
+F 1 "TP" H 7750 2330 50  0001 C CNN
+F 2 "Custom Footprints Library:Test_Point" H 7750 2180 60  0001 C CNN
+F 3 "" H 7750 2180 60  0000 C CNN
+	1    7750 2180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2180 7750 2240
+Connection ~ 7750 2240
+Wire Wire Line
+	7750 2240 8260 2240
 $EndSCHEMATC
