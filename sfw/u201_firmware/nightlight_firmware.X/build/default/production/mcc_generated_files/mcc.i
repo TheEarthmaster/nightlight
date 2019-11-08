@@ -3013,6 +3013,13 @@ typedef uint32_t uint_fast32_t;
 # 1 "mcc_generated_files/interrupt_manager.h" 1
 # 54 "mcc_generated_files/mcc.h" 2
 
+# 1 "mcc_generated_files/pwm2.h" 1
+# 97 "mcc_generated_files/pwm2.h"
+void PWM2_Initialize(void);
+# 124 "mcc_generated_files/pwm2.h"
+void PWM2_LoadDutyValue(uint16_t dutyValue);
+# 55 "mcc_generated_files/mcc.h" 2
+
 # 1 "mcc_generated_files/ext_int.h" 1
 # 250 "mcc_generated_files/ext_int.h"
 void EXT_INT_Initialize(void);
@@ -3026,12 +3033,29 @@ void INT_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT_InterruptHandler)(void);
 # 367 "mcc_generated_files/ext_int.h"
 void INT_DefaultInterruptHandler(void);
-# 55 "mcc_generated_files/mcc.h" 2
-# 70 "mcc_generated_files/mcc.h"
+# 56 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/tmr2.h" 1
+# 103 "mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 132 "mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 164 "mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 199 "mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 238 "mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 290 "mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 325 "mcc_generated_files/tmr2.h"
+_Bool TMR2_HasOverflowOccured(void);
+# 57 "mcc_generated_files/mcc.h" 2
+# 72 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "mcc_generated_files/mcc.h"
+# 85 "mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "mcc_generated_files/mcc.h"
+# 97 "mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 47 "mcc_generated_files/mcc.c" 2
 
@@ -3043,6 +3067,8 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     WDT_Initialize();
+    PWM2_Initialize();
+    TMR2_Initialize();
     EXT_INT_Initialize();
 }
 

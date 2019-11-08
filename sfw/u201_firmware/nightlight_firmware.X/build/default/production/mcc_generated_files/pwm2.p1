@@ -1,55 +1,13 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"1854 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1854: extern volatile unsigned char LATA __attribute__((address(0x10C)));
-[v _LATA `Vuc ~T0 @X0 0 e@268 ]
-"1916
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1916: extern volatile unsigned char LATB __attribute__((address(0x10D)));
-[v _LATB `Vuc ~T0 @X0 0 e@269 ]
-"1978
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1978: extern volatile unsigned char LATC __attribute__((address(0x10E)));
-[v _LATC `Vuc ~T0 @X0 0 e@270 ]
-"1052
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1052: extern volatile unsigned char TRISA __attribute__((address(0x08C)));
-[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
-"1114
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1114: extern volatile unsigned char TRISB __attribute__((address(0x08D)));
-[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
-"1176
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1176: extern volatile unsigned char TRISC __attribute__((address(0x08E)));
-[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
-"2269
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2269: extern volatile unsigned char ANSELC __attribute__((address(0x18E)));
-[v _ANSELC `Vuc ~T0 @X0 0 e@398 ]
-"2211
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2211: extern volatile unsigned char ANSELB __attribute__((address(0x18D)));
-[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
-"2158
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2158: extern volatile unsigned char ANSELA __attribute__((address(0x18C)));
-[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
-"2907
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2907: extern volatile unsigned char WPUE __attribute__((address(0x210)));
-[v _WPUE `Vuc ~T0 @X0 0 e@528 ]
-"2837
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2837: extern volatile unsigned char WPUB __attribute__((address(0x20D)));
-[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
-"1347
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1347:     struct {
-[s S75 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S75 . PS PSA TMR0SE TMR0CS INTEDG nWPUEN ]
-"1355
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1355:     struct {
-[s S76 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S76 . PS0 PS1 PS2 . T0SE T0CS ]
-"1346
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1346: typedef union {
-[u S74 `S75 1 `S76 1 ]
-[n S74 . . . ]
-"1364
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1364: extern volatile OPTION_REGbits_t OPTION_REGbits __attribute__((address(0x095)));
-[v _OPTION_REGbits `VS74 ~T0 @X0 0 e@149 ]
-"2132
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 2132: extern volatile unsigned char APFCON __attribute__((address(0x11D)));
-[v _APFCON `Vuc ~T0 @X0 0 e@285 ]
+"3770 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 3770: extern volatile unsigned char CCP2CON __attribute__((address(0x29A)));
+[v _CCP2CON `Vuc ~T0 @X0 0 e@666 ]
+"3730
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 3730: extern volatile unsigned char CCPR2L __attribute__((address(0x298)));
+[v _CCPR2L `Vuc ~T0 @X0 0 e@664 ]
+"3750
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 3750: extern volatile unsigned char CCPR2H __attribute__((address(0x299)));
+[v _CCPR2H `Vuc ~T0 @X0 0 e@665 ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -383,66 +341,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4258
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 4258: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"55 mcc_generated_files/pin_manager.c
-[; ;mcc_generated_files/pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
-"56
-[; ;mcc_generated_files/pin_manager.c: 56: {
+"64 mcc_generated_files/pwm2.c
+[; ;mcc_generated_files/pwm2.c: 64: void PWM2_Initialize(void)
+[v _PWM2_Initialize `(v ~T0 @X0 1 ef ]
+"65
+[; ;mcc_generated_files/pwm2.c: 65: {
 {
-[e :U _PIN_MANAGER_Initialize ]
+[e :U _PWM2_Initialize ]
 [f ]
-"60
-[; ;mcc_generated_files/pin_manager.c: 60:     LATA = 0x04;
-[e = _LATA -> -> 4 `i `uc ]
-"61
-[; ;mcc_generated_files/pin_manager.c: 61:     LATB = 0x00;
-[e = _LATB -> -> 0 `i `uc ]
-"62
-[; ;mcc_generated_files/pin_manager.c: 62:     LATC = 0x00;
-[e = _LATC -> -> 0 `i `uc ]
-"67
-[; ;mcc_generated_files/pin_manager.c: 67:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
-"68
-[; ;mcc_generated_files/pin_manager.c: 68:     TRISB = 0x07;
-[e = _TRISB -> -> 7 `i `uc ]
 "69
-[; ;mcc_generated_files/pin_manager.c: 69:     TRISC = 0x00;
-[e = _TRISC -> -> 0 `i `uc ]
-"74
-[; ;mcc_generated_files/pin_manager.c: 74:     ANSELC = 0x00;
-[e = _ANSELC -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pwm2.c: 69:  CCP2CON = 0x3C;
+[e = _CCP2CON -> -> 60 `i `uc ]
+"72
+[; ;mcc_generated_files/pwm2.c: 72:  CCPR2L = 0x9F;
+[e = _CCPR2L -> -> 159 `i `uc ]
 "75
-[; ;mcc_generated_files/pin_manager.c: 75:     ANSELB = 0x00;
-[e = _ANSELB -> -> 0 `i `uc ]
-"76
-[; ;mcc_generated_files/pin_manager.c: 76:     ANSELA = 0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
-"81
-[; ;mcc_generated_files/pin_manager.c: 81:     WPUE = 0x00;
-[e = _WPUE -> -> 0 `i `uc ]
-"82
-[; ;mcc_generated_files/pin_manager.c: 82:     WPUB = 0x00;
-[e = _WPUB -> -> 0 `i `uc ]
-"83
-[; ;mcc_generated_files/pin_manager.c: 83:     OPTION_REGbits.nWPUEN = 1;
-[e = . . _OPTION_REGbits 0 5 -> -> 1 `i `uc ]
-"89
-[; ;mcc_generated_files/pin_manager.c: 89:     APFCON = 0x00;
-[e = _APFCON -> -> 0 `i `uc ]
-"96
-[; ;mcc_generated_files/pin_manager.c: 96: }
+[; ;mcc_generated_files/pwm2.c: 75:  CCPR2H = 0x00;
+[e = _CCPR2H -> -> 0 `i `uc ]
+"78
+[; ;mcc_generated_files/pwm2.c: 78: }
 [e :UE 237 ]
 }
-"98
-[; ;mcc_generated_files/pin_manager.c: 98: void PIN_MANAGER_IOC(void)
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"99
-[; ;mcc_generated_files/pin_manager.c: 99: {
+"80
+[; ;mcc_generated_files/pwm2.c: 80: void PWM2_LoadDutyValue(uint16_t dutyValue)
+[v _PWM2_LoadDutyValue `(v ~T0 @X0 1 ef1`us ]
+"81
+[; ;mcc_generated_files/pwm2.c: 81: {
 {
-[e :U _PIN_MANAGER_IOC ]
+[e :U _PWM2_LoadDutyValue ]
+"80
+[; ;mcc_generated_files/pwm2.c: 80: void PWM2_LoadDutyValue(uint16_t dutyValue)
+[v _dutyValue `us ~T0 @X0 1 r1 ]
+"81
+[; ;mcc_generated_files/pwm2.c: 81: {
 [f ]
-"100
-[; ;mcc_generated_files/pin_manager.c: 100: }
+"83
+[; ;mcc_generated_files/pwm2.c: 83:     CCPR2L = ((dutyValue & 0x03FC)>>2);
+[e = _CCPR2L -> >> & -> _dutyValue `ui -> -> 1020 `i `ui -> 2 `i `uc ]
+"86
+[; ;mcc_generated_files/pwm2.c: 86:     CCP2CON = ((uint8_t)(CCP2CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+[e = _CCP2CON -> | -> -> & -> _CCP2CON `i -> 207 `i `uc `ui << & -> _dutyValue `ui -> -> 3 `i `ui -> 4 `i `uc ]
+"87
+[; ;mcc_generated_files/pwm2.c: 87: }
 [e :UE 238 ]
 }

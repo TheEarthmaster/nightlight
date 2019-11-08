@@ -3013,6 +3013,13 @@ typedef uint32_t uint_fast32_t;
 # 1 "./mcc_generated_files/interrupt_manager.h" 1
 # 54 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/pwm2.h" 1
+# 97 "./mcc_generated_files/pwm2.h"
+void PWM2_Initialize(void);
+# 124 "./mcc_generated_files/pwm2.h"
+void PWM2_LoadDutyValue(uint16_t dutyValue);
+# 55 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/ext_int.h" 1
 # 250 "./mcc_generated_files/ext_int.h"
 void EXT_INT_Initialize(void);
@@ -3026,12 +3033,29 @@ void INT_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT_InterruptHandler)(void);
 # 367 "./mcc_generated_files/ext_int.h"
 void INT_DefaultInterruptHandler(void);
-# 55 "./mcc_generated_files/mcc.h" 2
-# 70 "./mcc_generated_files/mcc.h"
+# 56 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 103 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 132 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 164 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 199 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 238 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 290 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 325 "./mcc_generated_files/tmr2.h"
+_Bool TMR2_HasOverflowOccured(void);
+# 57 "./mcc_generated_files/mcc.h" 2
+# 72 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 83 "./mcc_generated_files/mcc.h"
+# 85 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "./mcc_generated_files/mcc.h"
+# 97 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
 # 44 "main.c" 2
 
@@ -3039,12 +3063,57 @@ void WDT_Initialize(void);
 # 45 "main.c" 2
 
 
+
+
+_Bool enable_leds_flag = 0;
+_Bool old_led_state_flag = 0;
+
+
+void setLEDBrightness(uint8_t input_brightness) {
+
+
+    if (input_brightness > 100) input_brightness = 100;
+
+
+    input_brightness /= 2;
+
+
+    PWM2_LoadDutyValue(500 - input_brightness);
+
+}
+
+void fadeLEDsUp(void) {
+
+    LATBbits.LATB4 = 1;
+
+    for (uint8_t value = 0; value < 100; value++) {
+
+        setLEDBrightness(value);
+        _delay((unsigned long)((20)*(16000000/4000.0)));
+
+    }
+
+}
+
+void fadeLEDsDown(void) {
+
+    for (uint8_t value = 100; value > 0; value--) {
+
+        setLEDBrightness(value);
+        _delay((unsigned long)((20)*(16000000/4000.0)));
+
+    }
+
+    LATBbits.LATB4 = 0;
+
+}
+
 void capTouchPowerISR(void)
 {
 
     (INTCONbits.GIE = 0);
 
-    LATAbits.LATA1 = !(LATAbits.LATA1);
+    enable_leds_flag = !(enable_leds_flag);
 
     _delay((unsigned long)((250)*(16000000/4000.0)));
 
@@ -3080,10 +3149,31 @@ void main(void)
 
     LATAbits.LATA2 = 0;
 
+    setLEDBrightness(0);
+
+    _delay((unsigned long)((100)*(16000000/4000.0)));
+
+    LATBbits.LATB4 = 0;
+
 
     while (1)
     {
 
-        __nop();
+
+        if (enable_leds_flag == 1 && old_led_state_flag == 0) {
+
+            fadeLEDsUp();
+            old_led_state_flag = enable_leds_flag;
+
+        }
+
+        if (enable_leds_flag == 0 && old_led_state_flag == 1) {
+
+            fadeLEDsDown();
+            old_led_state_flag = enable_leds_flag;
+
+        }
+
+
     }
 }

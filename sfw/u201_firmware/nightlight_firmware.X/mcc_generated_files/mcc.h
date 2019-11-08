@@ -52,7 +52,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "interrupt_manager.h"
+#include "pwm2.h"
 #include "ext_int.h"
+#include "tmr2.h"
 
 
 

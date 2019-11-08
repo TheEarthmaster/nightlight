@@ -1,26 +1,24 @@
 /**
-  Generated Pin Manager File
+  PWM2 Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    pin_manager.c
+  @File Name
+    pwm2.c
 
-  Summary:
-    This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the PWM2 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for pin APIs for all pins selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for PWM2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.77
         Device            :  PIC16F1518
-        Driver Version    :  2.11
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.05 and above
-        MPLAB             :  MPLAB X 5.20
-
-    Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
+         MPLAB 	          :  MPLAB X 5.20
 */
 
 /*
@@ -46,59 +44,49 @@
     SOFTWARE.
 */
 
-#include "pin_manager.h"
+/**
+  Section: Included Files
+*/
 
+#include <xc.h>
+#include "pwm2.h"
 
+/**
+  Section: Macro Declarations
+*/
 
+#define PWM2_INITIALIZE_DUTY_VALUE    639
 
+/**
+  Section: PWM Module APIs
+*/
 
-void PIN_MANAGER_Initialize(void)
+void PWM2_Initialize(void)
 {
-    /**
-    LATx registers
-    */
-    LATA = 0x04;
-    LATB = 0x00;
-    LATC = 0x00;
+    // Set the PWM2 to the options selected in the User Interface
+	
+	// CCP2M PWM; DC2B 3; 
+	CCP2CON = 0x3C;    
+	
+	// CCPR2L 159; 
+	CCPR2L = 0x9F;    
+	
+	// CCPR2H 0; 
+	CCPR2H = 0x00;    
 
-    /**
-    TRISx registers
-    */
-    TRISA = 0x00;
-    TRISB = 0x07;
-    TRISC = 0x00;
-
-    /**
-    ANSELx registers
-    */
-    ANSELC = 0x00;
-    ANSELB = 0x00;
-    ANSELA = 0x00;
-
-    /**
-    WPUx registers
-    */
-    WPUE = 0x00;
-    WPUB = 0x00;
-    OPTION_REGbits.nWPUEN = 1;
-
-
-    /**
-    APFCONx registers
-    */
-    APFCON = 0x01;
-
-
-
-
-   
     
 }
-  
-void PIN_MANAGER_IOC(void)
-{   
+
+void PWM2_LoadDutyValue(uint16_t dutyValue)
+{
+   // Writing to 8 MSBs of pwm duty cycle in CCPRL register
+    CCPR2L = ((dutyValue & 0x03FC)>>2);
+    
+   // Writing to 2 LSBs of pwm duty cycle in CCPCON register
+    CCP2CON = ((uint8_t)(CCP2CON & 0xCF) | ((dutyValue & 0x0003)<<4));
 }
 
 /**
  End of File
 */
+

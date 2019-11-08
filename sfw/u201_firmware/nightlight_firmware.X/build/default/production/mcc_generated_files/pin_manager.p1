@@ -428,8 +428,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 83:     OPTION_REGbits.nWPUEN = 1;
 [e = . . _OPTION_REGbits 0 5 -> -> 1 `i `uc ]
 "89
-[; ;mcc_generated_files/pin_manager.c: 89:     APFCON = 0x00;
-[e = _APFCON -> -> 0 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 89:     APFCON = 0x01;
+[e = _APFCON -> -> 1 `i `uc ]
 "96
 [; ;mcc_generated_files/pin_manager.c: 96: }
 [e :UE 237 ]

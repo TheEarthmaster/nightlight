@@ -1,26 +1,24 @@
 /**
-  Generated Pin Manager File
+  PWM2 Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    pin_manager.c
+  @File Name
+    pwm2.h
 
-  Summary:
-    This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the PWM2 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for pin APIs for all pins selected in the GUI.
+  @Description
+    This header file provides implementations for driver APIs for PWM2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.77
         Device            :  PIC16F1518
-        Driver Version    :  2.11
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
         Compiler          :  XC8 2.05 and above
         MPLAB             :  MPLAB X 5.20
-
-    Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
 */
 
 /*
@@ -46,59 +44,93 @@
     SOFTWARE.
 */
 
-#include "pin_manager.h"
+#ifndef PWM2_H
+#define PWM2_H
 
+/**
+  Section: Included Files
+*/
 
+#include <xc.h>
+#include <stdint.h>
+#include <stdbool.h>
 
+#ifdef __cplusplus  // Provide C++ Compatibility
 
+    extern "C" {
 
-void PIN_MANAGER_Initialize(void)
-{
-    /**
-    LATx registers
-    */
-    LATA = 0x04;
-    LATB = 0x00;
-    LATC = 0x00;
+#endif
 
-    /**
-    TRISx registers
-    */
-    TRISA = 0x00;
-    TRISB = 0x07;
-    TRISC = 0x00;
+/**
+  Section: PWM Module APIs
+*/
 
-    /**
-    ANSELx registers
-    */
-    ANSELC = 0x00;
-    ANSELB = 0x00;
-    ANSELA = 0x00;
+/**
+  @Summary
+    Initializes the PWM2
 
-    /**
-    WPUx registers
-    */
-    WPUE = 0x00;
-    WPUB = 0x00;
-    OPTION_REGbits.nWPUEN = 1;
+  @Description
+    This routine initializes the PWM2 module.
+    This routine must be called before any other PWM2 routine is called.
+    This routine should only be called once during system initialization.
 
+  @Preconditions
+    None
 
-    /**
-    APFCONx registers
-    */
-    APFCON = 0x01;
+  @Param
+    None
 
+  @Returns
+    None
 
-
-
-   
+  @Comment
     
-}
-  
-void PIN_MANAGER_IOC(void)
-{   
-}
 
+ @Example
+    <code>
+    uint16_t dutycycle;
+
+    CCP2_Initialize();
+	PWM2_LoadDutyValue(dutycycle);
+    </code>
+ */
+void PWM2_Initialize(void);
+
+/**
+  @Summary
+    Loads 16-bit duty cycle.
+
+  @Description
+    This routine loads the 16 bit duty cycle value.
+
+  @Preconditions
+    PWM2_Initialize() function should have been called
+    before calling this function.
+
+  @Param
+    Pass 16bit duty cycle value.
+
+  @Returns
+    None
+
+  @Example
+    <code>
+    uint16_t dutycycle;
+
+    PWM2_Initialize();
+    PWM2_LoadDutyValue(dutycycle);
+    </code>
+*/
+void PWM2_LoadDutyValue(uint16_t dutyValue);
+
+        
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    }
+
+#endif
+
+#endif	//PWM2_H
 /**
  End of File
 */

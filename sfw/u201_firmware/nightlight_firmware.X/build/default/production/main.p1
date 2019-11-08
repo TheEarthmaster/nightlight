@@ -1,4 +1,22 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"124 ./mcc_generated_files/pwm2.h
+[; ;./mcc_generated_files/pwm2.h: 124: void PWM2_LoadDutyValue(uint16_t dutyValue);
+[v _PWM2_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"1922 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1922:     struct {
+[s S102 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S102 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"1921
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1921: typedef union {
+[u S101 `S102 1 ]
+[n S101 . . ]
+"1933
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1933: extern volatile LATBbits_t LATBbits __attribute__((address(0x10D)));
+[v _LATBbits `VS101 ~T0 @X0 0 e@269 ]
+[v F1635 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
+[v __delay `JF1635 ~T0 @X0 0 e ]
+[p i __delay ]
 "357 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 357:     struct {
 [s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -14,7 +32,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "374
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"1860
+[p mainexit ]
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+[v F1685 `(v ~T0 @X0 0 tf ]
+"319 ./mcc_generated_files/ext_int.h
+[; ;./mcc_generated_files/ext_int.h: 319: void INT_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _INT_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F1685 ]
+"1860 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1860:     struct {
 [s S100 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S100 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
@@ -25,21 +51,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1871
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 1871: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
 [v _LATAbits `VS99 ~T0 @X0 0 e@268 ]
-[v F1635 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
-[v __delay `JF1635 ~T0 @X0 0 e ]
-[p i __delay ]
-[p mainexit ]
-"70 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-[v F1682 `(v ~T0 @X0 0 tf ]
-"319 ./mcc_generated_files/ext_int.h
-[; ;./mcc_generated_files/ext_int.h: 319: void INT_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _INT_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F1682 ]
-"31 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic.h
-[v ___nop `(v ~T0 @X0 0 ef ]
-[p i ___nop ]
 "54 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -373,73 +384,211 @@ Version 4.0 HI-TECH Software Intermediate Code
 "4258
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h: 4258: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"47 main.c
-[; ;main.c: 47: void capTouchPowerISR(void)
+"49 main.c
+[; ;main.c: 49: _Bool enable_leds_flag = 0;
+[v _enable_leds_flag `a ~T0 @X0 1 e ]
+[i _enable_leds_flag
+-> -> 0 `i `a
+]
+"50
+[; ;main.c: 50: _Bool old_led_state_flag = 0;
+[v _old_led_state_flag `a ~T0 @X0 1 e ]
+[i _old_led_state_flag
+-> -> 0 `i `a
+]
+"53
+[; ;main.c: 53: void setLEDBrightness(uint8_t input_brightness) {
+[v _setLEDBrightness `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _setLEDBrightness ]
+[v _input_brightness `uc ~T0 @X0 1 r1 ]
+[f ]
+"56
+[; ;main.c: 56:     if (input_brightness > 100) input_brightness = 100;
+[e $ ! > -> _input_brightness `i -> 100 `i 238  ]
+[e = _input_brightness -> -> 100 `i `uc ]
+[e :U 238 ]
+"59
+[; ;main.c: 59:     input_brightness /= 2;
+[e =/ _input_brightness -> 2 `i ]
+"62
+[; ;main.c: 62:     PWM2_LoadDutyValue(500 - input_brightness);
+[e ( _PWM2_LoadDutyValue (1 -> - -> 500 `i -> _input_brightness `i `us ]
+"64
+[; ;main.c: 64: }
+[e :UE 237 ]
+}
+"66
+[; ;main.c: 66: void fadeLEDsUp(void) {
+[v _fadeLEDsUp `(v ~T0 @X0 1 ef ]
+{
+[e :U _fadeLEDsUp ]
+[f ]
+"68
+[; ;main.c: 68:     LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"70
+[; ;main.c: 70:     for (uint8_t value = 0; value < 100; value++) {
+{
+[v _value `uc ~T0 @X0 1 a ]
+[e = _value -> -> 0 `i `uc ]
+[e $ < -> _value `i -> 100 `i 240  ]
+[e $U 241  ]
+[e :U 240 ]
+{
+"72
+[; ;main.c: 72:         setLEDBrightness(value);
+[e ( _setLEDBrightness (1 _value ]
+"73
+[; ;main.c: 73:         _delay((unsigned long)((20)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"75
+[; ;main.c: 75:     }
+}
+[e ++ _value -> -> 1 `i `uc ]
+[e $ < -> _value `i -> 100 `i 240  ]
+[e :U 241 ]
+}
+"77
+[; ;main.c: 77: }
+[e :UE 239 ]
+}
+"79
+[; ;main.c: 79: void fadeLEDsDown(void) {
+[v _fadeLEDsDown `(v ~T0 @X0 1 ef ]
+{
+[e :U _fadeLEDsDown ]
+[f ]
+"81
+[; ;main.c: 81:     for (uint8_t value = 100; value > 0; value--) {
+{
+[v _value `uc ~T0 @X0 1 a ]
+[e = _value -> -> 100 `i `uc ]
+[e $ > -> _value `i -> 0 `i 244  ]
+[e $U 245  ]
+[e :U 244 ]
+{
+"83
+[; ;main.c: 83:         setLEDBrightness(value);
+[e ( _setLEDBrightness (1 _value ]
+"84
+[; ;main.c: 84:         _delay((unsigned long)((20)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"86
+[; ;main.c: 86:     }
+}
+[e -- _value -> -> 1 `i `uc ]
+[e $ > -> _value `i -> 0 `i 244  ]
+[e :U 245 ]
+}
+"88
+[; ;main.c: 88:     LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"90
+[; ;main.c: 90: }
+[e :UE 243 ]
+}
+"92
+[; ;main.c: 92: void capTouchPowerISR(void)
 [v _capTouchPowerISR `(v ~T0 @X0 1 ef ]
-"48
-[; ;main.c: 48: {
+"93
+[; ;main.c: 93: {
 {
 [e :U _capTouchPowerISR ]
 [f ]
-"50
-[; ;main.c: 50:     (INTCONbits.GIE = 0);
+"95
+[; ;main.c: 95:     (INTCONbits.GIE = 0);
 [e = . . _INTCONbits 0 7 -> -> 0 `i `uc ]
-"52
-[; ;main.c: 52:     LATAbits.LATA1 = !(LATAbits.LATA1);
-[e = . . _LATAbits 0 1 -> -> ! != -> . . _LATAbits 0 1 `i -> 0 `i `i `uc ]
-"54
-[; ;main.c: 54:     _delay((unsigned long)((250)*(16000000/4000.0)));
+"97
+[; ;main.c: 97:     enable_leds_flag = !(enable_leds_flag);
+[e = _enable_leds_flag -> -> ! != -> _enable_leds_flag `i -> 0 `i `i `a ]
+"99
+[; ;main.c: 99:     _delay((unsigned long)((250)*(16000000/4000.0)));
 [e ( __delay (1 -> * -> -> 250 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"56
-[; ;main.c: 56:     INTCONbits.INTF = 0;
+"101
+[; ;main.c: 101:     INTCONbits.INTF = 0;
 [e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-"58
-[; ;main.c: 58:     (INTCONbits.GIE = 1);
+"103
+[; ;main.c: 103:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"59
-[; ;main.c: 59: }
-[e :UE 237 ]
+"104
+[; ;main.c: 104: }
+[e :UE 247 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"64
-[; ;main.c: 64: void main(void)
+"109
+[; ;main.c: 109: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"65
-[; ;main.c: 65: {
+"110
+[; ;main.c: 110: {
 {
 [e :U _main ]
 [f ]
-"67
-[; ;main.c: 67:     SYSTEM_Initialize();
+"112
+[; ;main.c: 112:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"73
-[; ;main.c: 73:     (INTCONbits.GIE = 1);
+"118
+[; ;main.c: 118:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"76
-[; ;main.c: 76:     (INTCONbits.PEIE = 1);
+"121
+[; ;main.c: 121:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"84
-[; ;main.c: 84:     INT_SetInterruptHandler(capTouchPowerISR);
+"129
+[; ;main.c: 129:     INT_SetInterruptHandler(capTouchPowerISR);
 [e ( _INT_SetInterruptHandler (1 &U _capTouchPowerISR ]
-"86
-[; ;main.c: 86:     LATAbits.LATA2 = 0;
+"131
+[; ;main.c: 131:     LATAbits.LATA2 = 0;
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
-"89
-[; ;main.c: 89:     while (1)
-[e :U 240 ]
-"90
-[; ;main.c: 90:     {
+"133
+[; ;main.c: 133:     setLEDBrightness(0);
+[e ( _setLEDBrightness (1 -> -> 0 `i `uc ]
+"135
+[; ;main.c: 135:     _delay((unsigned long)((100)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"137
+[; ;main.c: 137:     LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"140
+[; ;main.c: 140:     while (1)
+[e :U 250 ]
+"141
+[; ;main.c: 141:     {
 {
-"92
-[; ;main.c: 92:         __nop();
-[e ( ___nop ..  ]
-"93
-[; ;main.c: 93:     }
+"144
+[; ;main.c: 144:         if (enable_leds_flag == 1 && old_led_state_flag == 0) {
+[e $ ! && == -> _enable_leds_flag `i -> 1 `i == -> _old_led_state_flag `i -> 0 `i 252  ]
+{
+"146
+[; ;main.c: 146:             fadeLEDsUp();
+[e ( _fadeLEDsUp ..  ]
+"147
+[; ;main.c: 147:             old_led_state_flag = enable_leds_flag;
+[e = _old_led_state_flag _enable_leds_flag ]
+"149
+[; ;main.c: 149:         }
 }
-[e :U 239 ]
-[e $U 240  ]
-[e :U 241 ]
-"94
-[; ;main.c: 94: }
-[e :UE 238 ]
+[e :U 252 ]
+"151
+[; ;main.c: 151:         if (enable_leds_flag == 0 && old_led_state_flag == 1) {
+[e $ ! && == -> _enable_leds_flag `i -> 0 `i == -> _old_led_state_flag `i -> 1 `i 253  ]
+{
+"153
+[; ;main.c: 153:             fadeLEDsDown();
+[e ( _fadeLEDsDown ..  ]
+"154
+[; ;main.c: 154:             old_led_state_flag = enable_leds_flag;
+[e = _old_led_state_flag _enable_leds_flag ]
+"156
+[; ;main.c: 156:         }
+}
+[e :U 253 ]
+"159
+[; ;main.c: 159:     }
+}
+[e :U 249 ]
+[e $U 250  ]
+[e :U 251 ]
+"160
+[; ;main.c: 160: }
+[e :UE 248 ]
 }
