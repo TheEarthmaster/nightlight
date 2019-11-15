@@ -46,8 +46,8 @@
 
 #include <stdbool.h>
 
-bool enable_leds_flag = false;
-bool old_led_state_flag = false;
+volatile bool enable_leds_flag = false;
+volatile bool old_led_state_flag = false;
 
 // expects value between 0 and 100
 void setLEDBrightness(uint8_t input_brightness) {
@@ -94,8 +94,6 @@ void capTouchPowerISR(void)
     
     INTERRUPT_GlobalInterruptDisable();
     
-    enable_leds_flag = !(enable_leds_flag);
-    
     __delay_ms(250);
     
     INTCONbits.INTF = 0;
@@ -103,6 +101,29 @@ void capTouchPowerISR(void)
     INTERRUPT_GlobalInterruptEnable();
 }
 
+void PIRSensorISR(void) {
+ 
+    __delay_ms(250);
+    enable_leds_flag = true;
+
+    TMR1_StopTimer();
+    
+    // clear fade away timer
+    TMR1_WriteTimer(0);
+
+    // start fade away timer
+    TMR1_StartTimer();
+    
+    INTCONbits.IOCIF = 0;
+        
+}
+
+void fadeAwayISR(void) {
+
+    enable_leds_flag = false;
+    PIR1bits.TMR1IF = 0;
+    
+}
 /*
                          Main application
  */
@@ -111,6 +132,9 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
 
+    TMR1_StopTimer();
+    TMR1_WriteTimer(0);
+    
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 
@@ -126,7 +150,10 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    INT_SetInterruptHandler(capTouchPowerISR);
+    // INT_SetInterruptHandler(capTouchPowerISR);
+    IOCBF2_SetInterruptHandler(PIRSensorISR);
+    // IOCBF2_SetInterruptHandler(fadeLEDsUp);
+    TMR1_SetInterruptHandler(fadeAwayISR);
     
     RESET_LED_PIN = 0;
     
@@ -139,6 +166,19 @@ void main(void)
     
     while (1)
     {
+        
+        if(PIR_OUT_PIN == 1) {
+         
+            TMR1_StopTimer();
+    
+            // clear fade away timer
+            TMR1_WriteTimer(0);
+
+            // start fade away timer
+            TMR1_StartTimer();
+            
+        }
+        
         // Add your application code
         
         if (enable_leds_flag == true && old_led_state_flag == false) {
@@ -152,6 +192,10 @@ void main(void)
             
             fadeLEDsDown();
             old_led_state_flag = enable_leds_flag;
+            TMR1_StopTimer();
+            TMR1_WriteTimer(0);
+
+
             
         }
         

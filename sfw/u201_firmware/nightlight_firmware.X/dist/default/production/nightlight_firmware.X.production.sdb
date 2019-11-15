@@ -1,23 +1,25 @@
-[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F1518 ]
 [d frameptr 6 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"53 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
+"53 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
 [v _setLEDBrightness setLEDBrightness `(v  1 e 1 0 ]
 "66
 [v _fadeLEDsUp fadeLEDsUp `(v  1 e 1 0 ]
 "79
 [v _fadeLEDsDown fadeLEDsDown `(v  1 e 1 0 ]
-"92
-[v _capTouchPowerISR capTouchPowerISR `(v  1 e 1 0 ]
-"109
+"104
+[v _PIRSensorISR PIRSensorISR `(v  1 e 1 0 ]
+"121
+[v _fadeAwayISR fadeAwayISR `(v  1 e 1 0 ]
+"130
 [v _main main `(v  1 e 1 0 ]
-"32 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
+"32 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
 [v _INT_ISR INT_ISR `(v  1 e 1 0 ]
 "41
 [v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
@@ -27,23 +29,48 @@
 [v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
 "59
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
-"52 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
+"50 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"61
+"62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"69
+"70
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
+"57 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
+"113
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+"125
+[v _IOCBF2_ISR IOCBF2_ISR `(v  1 e 1 0 ]
+"140
+[v _IOCBF2_SetInterruptHandler IOCBF2_SetInterruptHandler `(v  1 e 1 0 ]
+"147
+[v _IOCBF2_DefaultInterruptHandler IOCBF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
 [v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
 "80
 [v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
-"62 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr2.c
+"64 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"93
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+[v i1_TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"99
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+[v i1_TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+[v i1_TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
-[s S105 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S186 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -52,15 +79,27 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"374 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f1518.h
-[s S114 . 1 `uc 1 . 1 0 :2:0 
+"372 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1518.h
+[s S195 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S119 . 1 `S105 1 . 1 0 `S114 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES119  1 e 1 @11 ]
-[s S216 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S200 . 1 `S186 1 . 1 0 `S195 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES200  1 e 1 @11 ]
+[s S693 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"506
+[u S702 . 1 `S693 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES702  1 e 1 @13 ]
+[s S366 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -69,21 +108,59 @@
 `uc 1 ADIF 1 0 :1:6 
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
-"653
-[u S225 . 1 `S216 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES225  1 e 1 @17 ]
-"941
+"651
+[u S375 . 1 `S366 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES375  1 e 1 @17 ]
+"757
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"777
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"797
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S516 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+"819
+[s S523 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[u S529 . 1 `S516 1 . 1 0 `S523 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES529  1 e 1 @24 ]
+"869
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S546 . 1 `uc 1 T1GSS 1 0 :2:0 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO_nDONE 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"889
+[s S554 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+]
+[u S557 . 1 `S546 1 . 1 0 `S554 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES557  1 e 1 @25 ]
+"939
 [v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
-"961
+"959
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
-"981
+"979
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S238 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S435 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
-"1002
-[s S242 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+"1000
+[s S439 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -91,38 +168,50 @@
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S250 . 1 `S238 1 . 1 0 `S242 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES250  1 e 1 @28 ]
-"1052
+[u S447 . 1 `S435 1 . 1 0 `S439 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES447  1 e 1 @28 ]
+"1050
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
-"1114
+"1112
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
-"1176
+"1174
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S63 . 1 `uc 1 PS 1 0 :3:0 
+[s S345 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1260
+[u S354 . 1 `S345 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES354  1 e 1 @145 ]
+[s S65 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
 `uc 1 INTEDG 1 0 :1:6 
 `uc 1 nWPUEN 1 0 :1:7 
 ]
-"1364
-[s S70 . 1 `uc 1 PS0 1 0 :1:0 
+"1362
+[s S72 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S77 . 1 `S63 1 . 1 0 `S70 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES77  1 e 1 @149 ]
-"1481
+[u S79 . 1 `S65 1 . 1 0 `S72 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES79  1 e 1 @149 ]
+"1479
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
-"1540
+"1538
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
-"1854
+"1852
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S337 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S672 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -131,12 +220,12 @@
 `uc 1 LATA6 1 0 :1:6 
 `uc 1 LATA7 1 0 :1:7 
 ]
-"1871
-[u S346 . 1 `S337 1 . 1 0 ]
-[v _LATAbits LATAbits `VES346  1 e 1 @268 ]
-"1916
+"1869
+[u S681 . 1 `S672 1 . 1 0 ]
+[v _LATAbits LATAbits `VES681  1 e 1 @268 ]
+"1914
 [v _LATB LATB `VEuc  1 e 1 @269 ]
-[s S289 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S607 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -145,54 +234,102 @@
 `uc 1 LATB6 1 0 :1:6 
 `uc 1 LATB7 1 0 :1:7 
 ]
-"1933
-[u S298 . 1 `S289 1 . 1 0 ]
-[v _LATBbits LATBbits `VES298  1 e 1 @269 ]
-"1978
+"1931
+[u S616 . 1 `S607 1 . 1 0 ]
+[v _LATBbits LATBbits `VES616  1 e 1 @269 ]
+"1976
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-"2040
+"2038
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
-"2132
+"2130
 [v _APFCON APFCON `VEuc  1 e 1 @285 ]
-"2158
+"2156
 [v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
-"2211
+"2209
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
-"2269
+"2267
 [v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
-"2837
+"2835
 [v _WPUB WPUB `VEuc  1 e 1 @525 ]
-"2907
+"2905
 [v _WPUE WPUE `VEuc  1 e 1 @528 ]
-"3730
+"3728
 [v _CCPR2L CCPR2L `VEuc  1 e 1 @664 ]
-"3750
+"3748
 [v _CCPR2H CCPR2H `VEuc  1 e 1 @665 ]
-"3770
+"3768
 [v _CCP2CON CCP2CON `VEuc  1 e 1 @666 ]
-"49 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
-[v _enable_leds_flag enable_leds_flag `a  1 e 1 0 ]
+[s S150 . 1 `uc 1 IOCBP0 1 0 :1:0 
+`uc 1 IOCBP1 1 0 :1:1 
+`uc 1 IOCBP2 1 0 :1:2 
+`uc 1 IOCBP3 1 0 :1:3 
+`uc 1 IOCBP4 1 0 :1:4 
+`uc 1 IOCBP5 1 0 :1:5 
+`uc 1 IOCBP6 1 0 :1:6 
+`uc 1 IOCBP7 1 0 :1:7 
+]
+"3852
+[s S159 . 1 `uc 1 IOCBP 1 0 :8:0 
+]
+[u S161 . 1 `S150 1 . 1 0 `S159 1 . 1 0 ]
+[v _IOCBPbits IOCBPbits `VES161  1 e 1 @916 ]
+[s S124 . 1 `uc 1 IOCBN0 1 0 :1:0 
+`uc 1 IOCBN1 1 0 :1:1 
+`uc 1 IOCBN2 1 0 :1:2 
+`uc 1 IOCBN3 1 0 :1:3 
+`uc 1 IOCBN4 1 0 :1:4 
+`uc 1 IOCBN5 1 0 :1:5 
+`uc 1 IOCBN6 1 0 :1:6 
+`uc 1 IOCBN7 1 0 :1:7 
+]
+"3922
+[s S133 . 1 `uc 1 IOCBN 1 0 :8:0 
+]
+[u S135 . 1 `S124 1 . 1 0 `S133 1 . 1 0 ]
+[v _IOCBNbits IOCBNbits `VES135  1 e 1 @917 ]
+[s S98 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"3992
+[s S107 . 1 `uc 1 IOCBF 1 0 :8:0 
+]
+[u S109 . 1 `S98 1 . 1 0 `S107 1 . 1 0 ]
+[v _IOCBFbits IOCBFbits `VES109  1 e 1 @918 ]
+"49 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
+[v _enable_leds_flag enable_leds_flag `VEuc  1 e 1 0 ]
 "50
-[v _old_led_state_flag old_led_state_flag `a  1 e 1 0 ]
-"30 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
+[v _old_led_state_flag old_led_state_flag `VEuc  1 e 1 0 ]
+"30 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
-"109 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
+"54 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
+[v _IOCBF2_InterruptHandler IOCBF2_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEui  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"130 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"160
+"204
 } 0
 "66
 [v _fadeLEDsUp fadeLEDsUp `(v  1 e 1 0 ]
 {
 "70
-[v fadeLEDsUp@value value `uc  1 a 1 2 ]
+[v fadeLEDsUp@value value `uc  1 a 1 8 ]
 "77
 } 0
 "79
 [v _fadeLEDsDown fadeLEDsDown `(v  1 e 1 0 ]
 {
 "81
-[v fadeLEDsDown@value value `uc  1 a 1 2 ]
+[v fadeLEDsDown@value value `uc  1 a 1 8 ]
 "90
 } 0
 "53
@@ -201,46 +338,79 @@
 [v setLEDBrightness@input_brightness input_brightness `uc  1 a 1 wreg ]
 [v setLEDBrightness@input_brightness input_brightness `uc  1 a 1 wreg ]
 "56
-[v setLEDBrightness@input_brightness input_brightness `uc  1 a 1 0 ]
+[v setLEDBrightness@input_brightness input_brightness `uc  1 a 1 6 ]
 "64
 } 0
-"80 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
+"80 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
 [v _PWM2_LoadDutyValue PWM2_LoadDutyValue `(v  1 e 1 0 ]
 {
-[v PWM2_LoadDutyValue@dutyValue dutyValue `us  1 p 2 2 ]
+[v PWM2_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 0 ]
 "87
 } 0
-"50 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
+"120 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
+"140
+} 0
+"99
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"93
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
+"50 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"59
+"60
 } 0
-"69
+"70
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 {
-"73
+"74
 } 0
-"62 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr2.c
+"62 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"64 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
+"64 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"173
+} 0
+"64 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pwm2.c
 [v _PWM2_Initialize PWM2_Initialize `(v  1 e 1 0 ]
 {
 "78
 } 0
-"55 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
+"57 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"96
+"111
 } 0
-"61 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
+"140
+[v _IOCBF2_SetInterruptHandler IOCBF2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v IOCBF2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"142
+} 0
+"62 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"67
+"68
 } 0
-"59 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
+"59 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
 [v _EXT_INT_Initialize EXT_INT_Initialize `(v  1 e 1 0 ]
 {
 "70
@@ -248,15 +418,66 @@
 "50
 [v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "52
 } 0
-"52 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/interrupt_manager.c
+"52 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
-"63
+"78
 } 0
-"32 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
+"157 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"168
+} 0
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"178
+} 0
+"121 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
+[v _fadeAwayISR fadeAwayISR `(v  1 e 1 0 ]
+{
+"126
+} 0
+"113 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
+{
+"120
+} 0
+"125
+[v _IOCBF2_ISR IOCBF2_ISR `(v  1 e 1 0 ]
+{
+"135
+} 0
+"147
+[v _IOCBF2_DefaultInterruptHandler IOCBF2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"150
+} 0
+"104 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
+[v _PIRSensorISR PIRSensorISR `(v  1 e 1 0 ]
+{
+"119
+} 0
+"120 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/tmr1.c
+[v i1_TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v i1TMR1_WriteTimer@timerVal timerVal `ui  1 p 2 0 ]
+"140
+} 0
+"99
+[v i1_TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"93
+[v i1_TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
+"32 C:\Users\Drew Maatman\Documents\KiCad Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\mcc_generated_files/ext_int.c
 [v _INT_ISR INT_ISR `(v  1 e 1 0 ]
 {
 "38
@@ -270,9 +491,4 @@
 [v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
 {
 "57
-} 0
-"92 C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\sfw\u201_firmware\nightlight_firmware.X\main.c
-[v _capTouchPowerISR capTouchPowerISR `(v  1 e 1 0 ]
-{
-"104
 } 0
