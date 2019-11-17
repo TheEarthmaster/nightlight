@@ -1,0 +1,2261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Drew\Documents\Kicad_Projects\Projects\nightlight\hdw\nightlight\nightlight.sch</source>
+    <date>9/17/2019 10:15:52 PM</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>nightlight.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/microcontroller/" tstamps="/5D65CA5B/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>microcontroller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Power Supply/" tstamps="/5D6768C8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power_Supply.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/power button/" tstamps="/5D68A8AB/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power_buttton.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/led driver circuit/" tstamps="/5D705998/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>led_driver_circuit.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/ambient light sensor/" tstamps="/5D73D730/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ambient_light_sensor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/powerinput/" tstamps="/5D8184C1/">
+      <title_block>
+        <title>Electronic Display Logic Board</title>
+        <company>Marquette University Senior Design 2018/2019 Group E44</company>
+        <rev>A</rev>
+        <date>2018-12-15</date>
+        <source>power_input.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/passive infared/" tstamps="/5D83088C/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>passive_infared.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/status leds/" tstamps="/5D83BA0E/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>status_leds.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/mechanical/" tstamps="/5D860ACA/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>mechanical.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U201">
+      <value>PIC16F1518-ISO</value>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/41452B.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">PIC16F1518-I/SOCT-ND</field>
+      </fields>
+      <libsource lib="MCU_Microchip_PIC16" part="PIC16F1518-ISO" description="PIC16F1518, 16384W FLASH, 1024B SRAM, SO-28"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D65E7BA</tstamp>
+    </comp>
+    <comp ref="C202">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D65FF40</tstamp>
+    </comp>
+    <comp ref="J201">
+      <value>PICKIT3</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D663805</tstamp>
+    </comp>
+    <comp ref="C201">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D66668E</tstamp>
+    </comp>
+    <comp ref="SW201">
+      <value>MRST</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D66850A</tstamp>
+    </comp>
+    <comp ref="R201">
+      <value>10</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">A130079CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D6697DB</tstamp>
+    </comp>
+    <comp ref="R202">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D669CBE</tstamp>
+    </comp>
+    <comp ref="Q201">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">2N7002NCT-ND</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D66C346</tstamp>
+    </comp>
+    <comp ref="R203">
+      <value>10</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">A130079CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D66ECC3</tstamp>
+    </comp>
+    <comp ref="R204">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/microcontroller/" tstamps="/5D65CA5B/"/>
+      <tstamp>5D66F6AF</tstamp>
+    </comp>
+    <comp ref="U301">
+      <value>LTC3624DD</value>
+      <footprint>Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.5mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/36242fd.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">LTC3624IDD-3.3#PBF</field>
+      </fields>
+      <libsource lib="Custom_Library" part="LTC3624DD" description="17V, 2A Synchronous Step-Down Regulator with 3.5uA Quiescent Current"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D676B5F</tstamp>
+    </comp>
+    <comp ref="L301">
+      <value>4.7uH</value>
+      <footprint>Inductor_SMD:L_Vishay_IHLP-2020</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">541-1222-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D677628</tstamp>
+    </comp>
+    <comp ref="C304">
+      <value>47uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">490-9961-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D678277</tstamp>
+    </comp>
+    <comp ref="C302">
+      <value>22uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">490-14661-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D67AFFC</tstamp>
+    </comp>
+    <comp ref="C303">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D67B55A</tstamp>
+    </comp>
+    <comp ref="R305">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D67DE4D</tstamp>
+    </comp>
+    <comp ref="R303">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D67FB62</tstamp>
+    </comp>
+    <comp ref="R304">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D6802C5</tstamp>
+    </comp>
+    <comp ref="C301">
+      <value>2.2uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1085-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D682F3B</tstamp>
+    </comp>
+    <comp ref="R301">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D68425B</tstamp>
+    </comp>
+    <comp ref="R302">
+      <value>1.2k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RMCF0603FT1K20CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/Power Supply/" tstamps="/5D6768C8/"/>
+      <tstamp>5D684265</tstamp>
+    </comp>
+    <comp ref="U401">
+      <value>AT42QT1010-TSHR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/40001946A.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">AT42AT1010-TSHRCT-ND</field>
+      </fields>
+      <libsource lib="Sensor_Touch" part="AT42QT1010-TSHR" description="Single-key Touch Sensor, SOT-23-6"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D68B5CE</tstamp>
+    </comp>
+    <comp ref="C402">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D68B7BD</tstamp>
+    </comp>
+    <comp ref="C401">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D68F9C7</tstamp>
+    </comp>
+    <comp ref="R401">
+      <value>499</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">P499HCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D690E46</tstamp>
+    </comp>
+    <comp ref="SW401">
+      <value>Cap_Touch</value>
+      <libsource lib="Custom_Library" part="Cap_Touch" description="Test Point"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D691AAA</tstamp>
+    </comp>
+    <comp ref="R402">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/power button/" tstamps="/5D68A8AB/"/>
+      <tstamp>5D69306F</tstamp>
+    </comp>
+    <comp ref="U501">
+      <value>LT1618DD</value>
+      <footprint>Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm</footprint>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/1618fas.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">LT1618EDD#PBF-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="LT1618DD" description=""/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D70BE6A</tstamp>
+    </comp>
+    <comp ref="C503">
+      <value>10nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1085-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D70D78C</tstamp>
+    </comp>
+    <comp ref="L501">
+      <value>3.3uH</value>
+      <footprint>Inductor_SMD:L_Vishay_IHLP-2020</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">541-1269-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D70E7C2</tstamp>
+    </comp>
+    <comp ref="R503">
+      <value>.18</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RL12S.18FCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D70EA8E</tstamp>
+    </comp>
+    <comp ref="D505">
+      <value>MBR0530</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">MBR0530CT-ND</field>
+      </fields>
+      <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D710AB7</tstamp>
+    </comp>
+    <comp ref="R504">
+      <value>15.8K</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-15.8KHRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7127AF</tstamp>
+    </comp>
+    <comp ref="R505">
+      <value>1.07k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RMCF0603FT1K07CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D712AA5</tstamp>
+    </comp>
+    <comp ref="C504">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-2789-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D714725</tstamp>
+    </comp>
+    <comp ref="C502">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D71534E</tstamp>
+    </comp>
+    <comp ref="R501">
+      <value>5.1K</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-5.10KHRCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D716948</tstamp>
+    </comp>
+    <comp ref="D509">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D71F777</tstamp>
+    </comp>
+    <comp ref="D511">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D71FD78</tstamp>
+    </comp>
+    <comp ref="D507">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D720751</tstamp>
+    </comp>
+    <comp ref="D504">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D720E0C</tstamp>
+    </comp>
+    <comp ref="D502">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D721E27</tstamp>
+    </comp>
+    <comp ref="D508">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7240D2</tstamp>
+    </comp>
+    <comp ref="D510">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7240DD</tstamp>
+    </comp>
+    <comp ref="D506">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7240E8</tstamp>
+    </comp>
+    <comp ref="D503">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7240F3</tstamp>
+    </comp>
+    <comp ref="D501">
+      <value>warm white</value>
+      <footprint>LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1214-1445-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D7240FE</tstamp>
+    </comp>
+    <comp ref="C501">
+      <value>4.7uF</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-2789-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D732DC9</tstamp>
+    </comp>
+    <comp ref="R502">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/led driver circuit/" tstamps="/5D705998/"/>
+      <tstamp>5D733585</tstamp>
+    </comp>
+    <comp ref="Q601">
+      <value>BPW85A</value>
+      <footprint>LED_THT:LED_D3.0mm_Clear</footprint>
+      <datasheet>https://www.vishay.com/docs/81531/bpw85a.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">BPW85A-ND</field>
+      </fields>
+      <libsource lib="Sensor_Optical" part="BPW85A" description="Silicon NPN Phototransistor, Ica = 0.8-2.5mA, T-1"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D73F219</tstamp>
+    </comp>
+    <comp ref="R601">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D740625</tstamp>
+    </comp>
+    <comp ref="U601">
+      <value>OPA340NA</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/opa340.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-26275-1-ND</field>
+      </fields>
+      <libsource lib="Amplifier_Operational" part="OPA340NA" description="Single Single-Supply, Rail-to-Rail Operational Amplifier, MicroAmplifier Series, SOT-23-5"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D741E4F</tstamp>
+    </comp>
+    <comp ref="C601">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D744AC7</tstamp>
+    </comp>
+    <comp ref="C602">
+      <value>10nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1085-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D745772</tstamp>
+    </comp>
+    <comp ref="C603">
+      <value>1nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1080-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D745B52</tstamp>
+    </comp>
+    <comp ref="R602">
+      <value>499</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">P499HCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D74894F</tstamp>
+    </comp>
+    <comp ref="C604">
+      <value>10nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1085-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/ambient light sensor/" tstamps="/5D73D730/"/>
+      <tstamp>5D74910B</tstamp>
+    </comp>
+    <comp ref="D701">
+      <value>24V</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">SMAJ24CALFCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="D_TVS_ALT" description="Bidirectional transient-voltage-suppression diode, filled shape"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5BC52DC5</tstamp>
+    </comp>
+    <comp ref="U701">
+      <value>LTC4365DDB</value>
+      <footprint>Housings_DFN_QFN:DFN-8-1EP_2x3mm_Pitch0.5mm</footprint>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/4365fa.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">LTC4365IDDB#TRMPBFCT-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="LTC4365DDB" description="Overvoltage, Undervoltage and Reverse Supply Protection Controller, 3x2mm DFN-8 package, 50Hz/60Hz noise rejection"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5BC9779D</tstamp>
+    </comp>
+    <comp ref="Q701">
+      <value>IPC100N04S51R7ATMA1</value>
+      <footprint>TO_SOT_Packages_SMD:TDSON-8-1</footprint>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-IPC100N04S5-1R7-DS-v01_02-EN.pdf?fileId=5546d46253f65057015419c2835252f3</datasheet>
+      <fields>
+        <field name="Digi-Key PN">IPC100N04S51R7ATMA1CT-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="IPC100N04S51R7ATMA1" description="25A Id, 30V Vds, NexFET N-Channel Power MOSFET, 6.9mOhm Ron, Qg (typ) 7.9nC, SON8 5x6mm"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5BED5FAB</tstamp>
+    </comp>
+    <comp ref="Q702">
+      <value>IPC100N04S51R7ATMA1</value>
+      <footprint>TO_SOT_Packages_SMD:TDSON-8-1</footprint>
+      <datasheet>https://www.infineon.com/dgdl/Infineon-IPC100N04S5-1R7-DS-v01_02-EN.pdf?fileId=5546d46253f65057015419c2835252f3</datasheet>
+      <fields>
+        <field name="Digi-Key PN">IPC100N04S51R7ATMA1CT-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="IPC100N04S51R7ATMA1" description="25A Id, 30V Vds, NexFET N-Channel Power MOSFET, 6.9mOhm Ron, Qg (typ) 7.9nC, SON8 5x6mm"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5BEDD03C</tstamp>
+    </comp>
+    <comp ref="J701">
+      <value>+12V IN AUX</value>
+      <footprint>Connectors:BARREL_JACK</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">CP-202BH-ND</field>
+      </fields>
+      <libsource lib="Connector" part="Barrel_Jack_Switch" description="DC Barrel Jack with an internal switch"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5BF0E9C8</tstamp>
+    </comp>
+    <comp ref="R701">
+      <value>6.04M</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">541-6.04MHCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D81B7BA</tstamp>
+    </comp>
+    <comp ref="R702">
+      <value>86.6k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RMC50603FT86K6CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D81CA21</tstamp>
+    </comp>
+    <comp ref="R703">
+      <value>243k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RMCF0603FT243KCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D81F8E9</tstamp>
+    </comp>
+    <comp ref="R707">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D8225F5</tstamp>
+    </comp>
+    <comp ref="R708">
+      <value>5.1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">749-16663-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D822C58</tstamp>
+    </comp>
+    <comp ref="R705">
+      <value>10</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">A130079CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D823309</tstamp>
+    </comp>
+    <comp ref="R706">
+      <value>10</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">A130079CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D823C2D</tstamp>
+    </comp>
+    <comp ref="C701">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D82721E</tstamp>
+    </comp>
+    <comp ref="C702">
+      <value>10nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1085-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D827224</tstamp>
+    </comp>
+    <comp ref="C703">
+      <value>1nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">311-1080-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D82722A</tstamp>
+    </comp>
+    <comp ref="C704">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D829682</tstamp>
+    </comp>
+    <comp ref="R704">
+      <value>100k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RMCF0603FT100KCT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D829DE2</tstamp>
+    </comp>
+    <comp ref="C705">
+      <value>100uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">478-7997-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="CP" description="Polarized capacitor"/>
+      <sheetpath names="/powerinput/" tstamps="/5D8184C1/"/>
+      <tstamp>5D82A3D0</tstamp>
+    </comp>
+    <comp ref="J801">
+      <value>PIR Sensor</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1528-1991-ND</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x03" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D831312</tstamp>
+    </comp>
+    <comp ref="U801">
+      <value>74LVC1G17</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-11934-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G17_Power" description="Single Schmitt Buffer Gate, Low-Voltage CMOS"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D833479</tstamp>
+    </comp>
+    <comp ref="R801">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D83553E</tstamp>
+    </comp>
+    <comp ref="R802">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D835A34</tstamp>
+    </comp>
+    <comp ref="C802">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D8398C3</tstamp>
+    </comp>
+    <comp ref="C801">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/passive infared/" tstamps="/5D83088C/"/>
+      <tstamp>5D839B96</tstamp>
+    </comp>
+    <comp ref="U901">
+      <value>74LVC1G06_Power</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G06_Power" description="Single NOT Gate w/ Open Drain, Low-Voltage CMOS"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D83BF70</tstamp>
+    </comp>
+    <comp ref="D901">
+      <value>green</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">160-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D83D4EC</tstamp>
+    </comp>
+    <comp ref="R901">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D83E4AD</tstamp>
+    </comp>
+    <comp ref="C901">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D83FDC3</tstamp>
+    </comp>
+    <comp ref="U903">
+      <value>74LVC1G06_Power</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G06_Power" description="Single NOT Gate w/ Open Drain, Low-Voltage CMOS"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D8467DF</tstamp>
+    </comp>
+    <comp ref="D903">
+      <value>green</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">160-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D8467FF</tstamp>
+    </comp>
+    <comp ref="R904">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84680B</tstamp>
+    </comp>
+    <comp ref="C903">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D846821</tstamp>
+    </comp>
+    <comp ref="U904">
+      <value>74LVC1G06_Power</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G06_Power" description="Single NOT Gate w/ Open Drain, Low-Voltage CMOS"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84A9DE</tstamp>
+    </comp>
+    <comp ref="D904">
+      <value>red</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">160-1447-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84A9FE</tstamp>
+    </comp>
+    <comp ref="R907">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84AA0A</tstamp>
+    </comp>
+    <comp ref="C904">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84AA20</tstamp>
+    </comp>
+    <comp ref="R905">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D84F7F9</tstamp>
+    </comp>
+    <comp ref="U902">
+      <value>74LVC1G06_Power</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G06_Power" description="Single NOT Gate w/ Open Drain, Low-Voltage CMOS"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D852EE8</tstamp>
+    </comp>
+    <comp ref="D902">
+      <value>red</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">160-1447-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D852F07</tstamp>
+    </comp>
+    <comp ref="R903">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D852F13</tstamp>
+    </comp>
+    <comp ref="C902">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D852F29</tstamp>
+    </comp>
+    <comp ref="R902">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D857289</tstamp>
+    </comp>
+    <comp ref="U905">
+      <value>74LVC1G06_Power</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-353_SC-70-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</datasheet>
+      <fields>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <libsource lib="Custom_Library" part="74LVC1G06_Power" description="Single NOT Gate w/ Open Drain, Low-Voltage CMOS"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D85BC7E</tstamp>
+    </comp>
+    <comp ref="D905">
+      <value>green</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">160-1446-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D85BC9D</tstamp>
+    </comp>
+    <comp ref="R908">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD1K00CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D85BCA9</tstamp>
+    </comp>
+    <comp ref="C905">
+      <value>0.1uF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">1276-1000-1-ND</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D85BCBF</tstamp>
+    </comp>
+    <comp ref="R906">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digi-Key PN">RNCP0603FTD10K0CT-ND</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/status leds/" tstamps="/5D83BA0E/"/>
+      <tstamp>5D85BCDD</tstamp>
+    </comp>
+    <comp ref="H1001">
+      <value>MountingHole</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/mechanical/" tstamps="/5D860ACA/"/>
+      <tstamp>5D860D83</tstamp>
+    </comp>
+    <comp ref="H1002">
+      <value>MountingHole</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/mechanical/" tstamps="/5D860ACA/"/>
+      <tstamp>5D860FC5</tstamp>
+    </comp>
+    <comp ref="H1003">
+      <value>MountingHole</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/mechanical/" tstamps="/5D860ACA/"/>
+      <tstamp>5D861512</tstamp>
+    </comp>
+    <comp ref="H1004">
+      <value>MountingHole</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/mechanical/" tstamps="/5D860ACA/"/>
+      <tstamp>5D86151C</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Amplifier_Operational" part="MCP6L91T-EOT">
+      <aliases>
+        <alias>MCP6401T-xOT</alias>
+        <alias>MCP6561-OT</alias>
+        <alias>MCP6001-OT</alias>
+        <alias>MCP601-xOT</alias>
+        <alias>OPA333xxDBV</alias>
+        <alias>OPA340NA</alias>
+        <alias>OPA376xxDBV</alias>
+        <alias>TS881xLx</alias>
+        <alias>TSV911xxLx</alias>
+        <alias>OPA330xxDBV</alias>
+        <alias>OPA356xxDBV</alias>
+        <alias>LMH6702MF</alias>
+        <alias>LMH6609MF</alias>
+        <alias>TLV2371DBV</alias>
+        <alias>OPA842xDBV</alias>
+        <alias>OPA843xDBV</alias>
+        <alias>OPA846xDBV</alias>
+      </aliases>
+      <description>10 MHz, 850 µA Op Amps, SOT-23-5</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP6L91T-EOT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="V-" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Barrel_Jack_Switch">
+      <description>DC Barrel Jack with an internal switch</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Barrel_Jack_Switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x03">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="74LVC1G06_Power">
+      <description>Single NOT Gate w/ Open Drain, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G06_Power</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-353_SC-70-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf</field>
+        <field name="Digi-Key PN">296-8484-1-ND</field>
+      </fields>
+      <pins>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="~" type="openCol"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="74LVC1G17_Power">
+      <description>Single Schmitt Buffer Gate, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SOT*</fp>
+        <fp>SG-*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G17_Power</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-353_SC-70-5</field>
+        <field name="Digi-Key PN">296-11934-1-ND</field>
+      </fields>
+      <pins>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="Cap_Touch">
+      <description>Test Point</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Cap_Touch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="IPC100N04S51R7ATMA1">
+      <description>25A Id, 30V Vds, NexFET N-Channel Power MOSFET, 6.9mOhm Ron, Qg (typ) 7.9nC, SON8 5x6mm</description>
+      <docs>https://www.infineon.com/dgdl/Infineon-IPC100N04S5-1R7-DS-v01_02-EN.pdf?fileId=5546d46253f65057015419c2835252f3</docs>
+      <footprints>
+        <fp>TDSON*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IPC100N04S51R7ATMA1</field>
+        <field name="Footprint">Package_TO_SOT_SMD:TDSON-8-1</field>
+        <field name="Digi-Key PN">IPC100N04S51R7ATMA1CT-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="passive"/>
+        <pin num="5" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="LT1618DD">
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/1618fas.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT1618DD</field>
+        <field name="Footprint">Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm</field>
+        <field name="Digi-Key_PN">LT1618EDD#PBF-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="passive"/>
+        <pin num="2" name="ISN" type="passive"/>
+        <pin num="3" name="ISP" type="passive"/>
+        <pin num="4" name="IADJ" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="SW" type="passive"/>
+        <pin num="7" name="SW" type="passive"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="~SHDN" type="input"/>
+        <pin num="10" name="VC" type="passive"/>
+        <pin num="11" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="LTC3624DD">
+      <description>17V, 2A Synchronous Step-Down Regulator with 3.5uA Quiescent Current</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/36242fd.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC3624DD</field>
+        <field name="Footprint">Housings_DFN_QFN:DFN-8-1EP_3x3mm_Pitch0.5mm</field>
+        <field name="Digi-Key PN">LTC3624IDD#PBF-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW" type="passive"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="RUN" type="input"/>
+        <pin num="4" name="PGOOD" type="openCol"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="INTVCC" type="passive"/>
+        <pin num="7" name="MODE/SYNC" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Custom_Library" part="LTC4365DDB">
+      <description>Overvoltage, Undervoltage and Reverse Supply Protection Controller, 3x2mm DFN-8 package, 50Hz/60Hz noise rejection</description>
+      <docs>http://cds.linear.com/docs/en/datasheet/4365fa.pdf</docs>
+      <footprints>
+        <fp>DFN*1EP*2x3mm*P0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LTC4365DDB</field>
+        <field name="Footprint">Package_DFN_QFN:DFN-8-1EP_2x3mm_P0.5mm_EP0.61x2.2mm</field>
+        <field name="Digi-Key PN">LTC4365IDDB#TRMPBFCT-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="OV" type="input"/>
+        <pin num="3" name="UV" type="input"/>
+        <pin num="4" name="Vin" type="power_in"/>
+        <pin num="5" name="GATE" type="output"/>
+        <pin num="6" name="Vout" type="input"/>
+        <pin num="7" name="~FAULT" type="openCol"/>
+        <pin num="8" name="~SHDN" type="input"/>
+        <pin num="9" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_TVS_ALT">
+      <description>Bidirectional transient-voltage-suppression diode, filled shape</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS_ALT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="BAT48ZFILM">
+      <aliases>
+        <alias>MBR0520LT</alias>
+        <alias>MBR0520</alias>
+        <alias>MBR0530</alias>
+        <alias>MBR0540</alias>
+        <alias>MBR0550</alias>
+        <alias>MBR0560</alias>
+        <alias>MBR0570</alias>
+        <alias>MBR0580</alias>
+        <alias>BAT42W-V</alias>
+        <alias>BAT43W-V</alias>
+        <alias>PMEG6010CEH</alias>
+      </aliases>
+      <description>40V 0.35A Small Signal Schottky Diode, SOD-123</description>
+      <docs>www.st.com/resource/en/datasheet/bat48.pdf</docs>
+      <footprints>
+        <fp>D*SOD?123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAT48ZFILM</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_PIC16" part="PIC16F1518-ISP">
+      <aliases>
+        <alias>PIC16F1518-ISO</alias>
+        <alias>PIC16F1518-ISS</alias>
+      </aliases>
+      <description>PIC16F1518, 16384W FLASH, 1024B SRAM, SPDIP-28</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/41452B.pdf</docs>
+      <footprints>
+        <fp>DIP*</fp>
+        <fp>PDIP*</fp>
+        <fp>SO*</fp>
+        <fp>SSOP*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC16F1518-ISP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vpp/~MCLR~/RE3" type="input"/>
+        <pin num="2" name="RA0/AN0/~SS" type="BiDi"/>
+        <pin num="3" name="RA1/AN1" type="BiDi"/>
+        <pin num="4" name="RA2/AN2" type="BiDi"/>
+        <pin num="5" name="RA3/AN3/Vref+" type="BiDi"/>
+        <pin num="6" name="RA4/T0CKI" type="BiDi"/>
+        <pin num="7" name="RA5/AN4/VCAP/~SS" type="BiDi"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="RA7/OSC1/CLKIN" type="BiDi"/>
+        <pin num="10" name="RA6/OSC2/CLKOUT" type="BiDi"/>
+        <pin num="11" name="SOSCO/T1CKI/RC0" type="BiDi"/>
+        <pin num="12" name="SOSCI/CCP2/RC1" type="BiDi"/>
+        <pin num="13" name="CCP1/AN14/RC2" type="BiDi"/>
+        <pin num="14" name="SCK/SCL/AN15/RC3" type="BiDi"/>
+        <pin num="15" name="SDI/SDA/AN16/RC4" type="BiDi"/>
+        <pin num="16" name="SDO/AN17/RC5" type="BiDi"/>
+        <pin num="17" name="TX/CK/AN18/RC6" type="BiDi"/>
+        <pin num="18" name="RX/DT/AN19/RC7" type="BiDi"/>
+        <pin num="19" name="VSS" type="power_in"/>
+        <pin num="20" name="VDD" type="power_in"/>
+        <pin num="21" name="RB0/AN12/INT/IOC" type="BiDi"/>
+        <pin num="22" name="RB1/AN10/IOC" type="BiDi"/>
+        <pin num="23" name="RB2/AN8/IOC" type="BiDi"/>
+        <pin num="24" name="RB3/AN9/CCP2/IOC" type="BiDi"/>
+        <pin num="25" name="RB4/AN11/ADOUT/IOC" type="BiDi"/>
+        <pin num="26" name="RB5/AN13/T1G/IOC" type="BiDi"/>
+        <pin num="27" name="RB6/ADGRDA/IOC/ICSPCLK/ICDCLK" type="BiDi"/>
+        <pin num="28" name="RB7/ADGRDB/IOC/ICSPDAT/ICDDAT" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Sensor_Optical" part="SFH309">
+      <aliases>
+        <alias>BPW42</alias>
+        <alias>BPW85</alias>
+        <alias>BPW85A</alias>
+        <alias>BPW85B</alias>
+        <alias>BPW85C</alias>
+        <alias>TEPT4400</alias>
+      </aliases>
+      <description>Phototransistor NPN</description>
+      <docs>http://www.osram-os.com/Graphics/XPic2/00101811_0.pdf/SFH%20309,%20SFH%20309%20FA,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant.pdf</docs>
+      <footprints>
+        <fp>LED*3.0mm*Clear*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SFH309</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm_Clear</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Touch" part="AT42QT1010-TSHR">
+      <aliases>
+        <alias>AT42QT1011-TSHR</alias>
+      </aliases>
+      <description>Single-key Touch Sensor, SOT-23-6</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/40001946A.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AT42QT1010-TSHR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="SNSK" type="passive"/>
+        <pin num="4" name="SNS" type="passive"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SYNC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_SPST">
+      <description>Single Pole Single Throw (SPST) switch</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_SPST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BSS138">
+      <aliases>
+        <alias>2N7002</alias>
+        <alias>2N7002E</alias>
+        <alias>2N7002H</alias>
+        <alias>2N7002K</alias>
+        <alias>BS170F</alias>
+        <alias>BS870</alias>
+        <alias>BSN20</alias>
+        <alias>BSS123</alias>
+        <alias>BSS127S</alias>
+        <alias>DMG2302U</alias>
+        <alias>DMG3402L</alias>
+        <alias>DMG3404L</alias>
+        <alias>DMG3406L</alias>
+        <alias>DMG3414U</alias>
+        <alias>DMG3418L</alias>
+        <alias>DMN10H220L</alias>
+        <alias>DMN10H700S</alias>
+        <alias>DMN13H750S</alias>
+        <alias>DMN2041L</alias>
+        <alias>DMN2050L</alias>
+        <alias>DMN2056U</alias>
+        <alias>DMN2058U</alias>
+        <alias>DMN2075U</alias>
+        <alias>DMN2230U</alias>
+        <alias>DMN24H11DS</alias>
+        <alias>DMN24H3D5L</alias>
+        <alias>DMN3042L</alias>
+        <alias>DMN3051L</alias>
+        <alias>DMN30H4D0L</alias>
+        <alias>DMN3110S</alias>
+        <alias>DMN3150L</alias>
+        <alias>DMN3300U</alias>
+        <alias>DMN3404L</alias>
+        <alias>DMN6075S</alias>
+        <alias>DMN6140L</alias>
+        <alias>DMN67D7L</alias>
+        <alias>DMN67D8L</alias>
+        <alias>MMBF170</alias>
+        <alias>VN10LF</alias>
+        <alias>ZVN3306F</alias>
+        <alias>ZVN3310F</alias>
+        <alias>ZVN3320F</alias>
+        <alias>ZVN4106F</alias>
+        <alias>ZXM61N02F</alias>
+        <alias>ZXM61N03F</alias>
+        <alias>ZXMN10A07F</alias>
+        <alias>ZXMN2A01F</alias>
+        <alias>ZXMN2A14F</alias>
+        <alias>ZXMN2B01F</alias>
+        <alias>ZXMN2B14FH</alias>
+        <alias>ZXMN2F30FH</alias>
+        <alias>ZXMN2F34FH</alias>
+        <alias>ZXMN3A01F</alias>
+        <alias>ZXMN3A14F</alias>
+        <alias>ZXMN3B01F</alias>
+        <alias>ZXMN3B14F</alias>
+        <alias>ZXMN3F30FH</alias>
+        <alias>ZXMN6A07F</alias>
+        <alias>IRLML2060</alias>
+      </aliases>
+      <description>50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Amplifier_Operational">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Custom_Library">
+      <uri>C:/Users/Drew/Documents/Kicad_Projects/Libraries/KiCad_Custom_Libraries/Custom Library.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_PIC16">
+      <uri>C:\Program Files\KiCad\share\kicad\library/MCU_Microchip_PIC16.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Sensor_Optical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Sensor_Optical.lib</uri>
+    </library>
+    <library logical="Sensor_Touch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Sensor_Touch.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(Q201-Pad1)">
+      <node ref="R202" pin="2"/>
+      <node ref="Q201" pin="1"/>
+      <node ref="R201" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="C603" pin="2"/>
+      <node ref="R505" pin="2"/>
+      <node ref="C504" pin="2"/>
+      <node ref="U701" pin="9"/>
+      <node ref="U301" pin="9"/>
+      <node ref="U701" pin="1"/>
+      <node ref="D701" pin="2"/>
+      <node ref="J701" pin="2"/>
+      <node ref="J701" pin="3"/>
+      <node ref="C601" pin="2"/>
+      <node ref="Q601" pin="2"/>
+      <node ref="C602" pin="2"/>
+      <node ref="U601" pin="2"/>
+      <node ref="C604" pin="2"/>
+      <node ref="C402" pin="2"/>
+      <node ref="U401" pin="2"/>
+      <node ref="R402" pin="2"/>
+      <node ref="C302" pin="2"/>
+      <node ref="C303" pin="2"/>
+      <node ref="U301" pin="8"/>
+      <node ref="U501" pin="5"/>
+      <node ref="U501" pin="11"/>
+      <node ref="C502" pin="2"/>
+      <node ref="C503" pin="2"/>
+      <node ref="C501" pin="2"/>
+      <node ref="R502" pin="2"/>
+      <node ref="R902" pin="2"/>
+      <node ref="R906" pin="2"/>
+      <node ref="C905" pin="2"/>
+      <node ref="U902" pin="3"/>
+      <node ref="C902" pin="2"/>
+      <node ref="R801" pin="2"/>
+      <node ref="U801" pin="3"/>
+      <node ref="U901" pin="3"/>
+      <node ref="U904" pin="3"/>
+      <node ref="C903" pin="2"/>
+      <node ref="C904" pin="2"/>
+      <node ref="U903" pin="3"/>
+      <node ref="C901" pin="2"/>
+      <node ref="U905" pin="3"/>
+      <node ref="C703" pin="2"/>
+      <node ref="C702" pin="2"/>
+      <node ref="C701" pin="2"/>
+      <node ref="R703" pin="2"/>
+      <node ref="C705" pin="2"/>
+      <node ref="C704" pin="2"/>
+      <node ref="J801" pin="3"/>
+      <node ref="R802" pin="2"/>
+      <node ref="C801" pin="2"/>
+      <node ref="C802" pin="2"/>
+      <node ref="R302" pin="2"/>
+      <node ref="C301" pin="2"/>
+      <node ref="C201" pin="2"/>
+      <node ref="R304" pin="2"/>
+      <node ref="C202" pin="2"/>
+      <node ref="U201" pin="8"/>
+      <node ref="J201" pin="3"/>
+      <node ref="Q201" pin="2"/>
+      <node ref="R202" pin="1"/>
+      <node ref="C304" pin="2"/>
+      <node ref="U201" pin="19"/>
+    </net>
+    <net code="3" name="Net-(Q201-Pad3)">
+      <node ref="R203" pin="2"/>
+      <node ref="Q201" pin="3"/>
+    </net>
+    <net code="4" name="Net-(R201-Pad2)">
+      <node ref="R201" pin="2"/>
+      <node ref="SW201" pin="2"/>
+    </net>
+    <net code="5" name="+3V3">
+      <node ref="C902" pin="1"/>
+      <node ref="R305" pin="1"/>
+      <node ref="U905" pin="5"/>
+      <node ref="U902" pin="5"/>
+      <node ref="U501" pin="2"/>
+      <node ref="R503" pin="2"/>
+      <node ref="L501" pin="1"/>
+      <node ref="R905" pin="1"/>
+      <node ref="U501" pin="8"/>
+      <node ref="C905" pin="1"/>
+      <node ref="J801" pin="1"/>
+      <node ref="C601" pin="1"/>
+      <node ref="C801" pin="1"/>
+      <node ref="R204" pin="2"/>
+      <node ref="C802" pin="1"/>
+      <node ref="R707" pin="1"/>
+      <node ref="U201" pin="20"/>
+      <node ref="U601" pin="5"/>
+      <node ref="C202" pin="1"/>
+      <node ref="R903" pin="1"/>
+      <node ref="U801" pin="5"/>
+      <node ref="J201" pin="2"/>
+      <node ref="R601" pin="1"/>
+      <node ref="C603" pin="1"/>
+      <node ref="C602" pin="1"/>
+      <node ref="C201" pin="1"/>
+      <node ref="U901" pin="5"/>
+      <node ref="U903" pin="5"/>
+      <node ref="C903" pin="1"/>
+      <node ref="C904" pin="1"/>
+      <node ref="U401" pin="5"/>
+      <node ref="U401" pin="6"/>
+      <node ref="C402" pin="1"/>
+      <node ref="R907" pin="1"/>
+      <node ref="R904" pin="1"/>
+      <node ref="R901" pin="1"/>
+      <node ref="C501" pin="1"/>
+      <node ref="U301" pin="5"/>
+      <node ref="C304" pin="1"/>
+      <node ref="U904" pin="5"/>
+      <node ref="R908" pin="1"/>
+      <node ref="SW201" pin="1"/>
+      <node ref="C901" pin="1"/>
+      <node ref="L301" pin="2"/>
+    </net>
+    <net code="6" name="Net-(U201-Pad5)">
+      <node ref="U201" pin="5"/>
+    </net>
+    <net code="7" name="Net-(U201-Pad18)">
+      <node ref="U201" pin="18"/>
+    </net>
+    <net code="8" name="Net-(U201-Pad17)">
+      <node ref="U201" pin="17"/>
+    </net>
+    <net code="9" name="Net-(U201-Pad16)">
+      <node ref="U201" pin="16"/>
+    </net>
+    <net code="10" name="Net-(U201-Pad15)">
+      <node ref="U201" pin="15"/>
+    </net>
+    <net code="11" name="Net-(U201-Pad14)">
+      <node ref="U201" pin="14"/>
+    </net>
+    <net code="12" name="Net-(U201-Pad13)">
+      <node ref="U201" pin="13"/>
+    </net>
+    <net code="13" name="Net-(U201-Pad12)">
+      <node ref="U201" pin="12"/>
+    </net>
+    <net code="14" name="Net-(U201-Pad11)">
+      <node ref="U201" pin="11"/>
+    </net>
+    <net code="15" name="Net-(U201-Pad26)">
+      <node ref="U201" pin="26"/>
+    </net>
+    <net code="16" name="Net-(U201-Pad9)">
+      <node ref="U201" pin="9"/>
+    </net>
+    <net code="17" name="Net-(U201-Pad10)">
+      <node ref="U201" pin="10"/>
+    </net>
+    <net code="18" name="Net-(U201-Pad7)">
+      <node ref="U201" pin="7"/>
+    </net>
+    <net code="19" name="Net-(U201-Pad6)">
+      <node ref="U201" pin="6"/>
+    </net>
+    <net code="20" name="Net-(U201-Pad2)">
+      <node ref="U201" pin="2"/>
+    </net>
+    <net code="21" name="~MCLR">
+      <node ref="R204" pin="1"/>
+      <node ref="J201" pin="1"/>
+      <node ref="R203" pin="1"/>
+      <node ref="U201" pin="1"/>
+    </net>
+    <net code="22" name="led_enable">
+      <node ref="U501" pin="9"/>
+      <node ref="R502" pin="1"/>
+      <node ref="U201" pin="25"/>
+    </net>
+    <net code="23" name="reset">
+      <node ref="U201" pin="4"/>
+      <node ref="U904" pin="2"/>
+      <node ref="R905" pin="2"/>
+    </net>
+    <net code="24" name="analog_error">
+      <node ref="U201" pin="3"/>
+      <node ref="U902" pin="2"/>
+      <node ref="R902" pin="1"/>
+    </net>
+    <net code="25" name="led_pwm">
+      <node ref="R501" pin="2"/>
+      <node ref="U201" pin="24"/>
+    </net>
+    <net code="26" name="pir_out">
+      <node ref="R906" pin="1"/>
+      <node ref="U201" pin="23"/>
+      <node ref="R802" pin="1"/>
+      <node ref="U801" pin="4"/>
+      <node ref="U905" pin="2"/>
+    </net>
+    <net code="27" name="light_level_adc">
+      <node ref="U201" pin="22"/>
+      <node ref="R602" pin="1"/>
+      <node ref="C604" pin="1"/>
+    </net>
+    <net code="28" name="Cap_Touch_Power">
+      <node ref="R402" pin="1"/>
+      <node ref="U401" pin="1"/>
+      <node ref="U201" pin="21"/>
+    </net>
+    <net code="29" name="ICDDAT">
+      <node ref="J201" pin="4"/>
+      <node ref="U201" pin="28"/>
+    </net>
+    <net code="30" name="ICDCLK">
+      <node ref="U201" pin="27"/>
+      <node ref="J201" pin="5"/>
+    </net>
+    <net code="31" name="Net-(J201-Pad6)">
+      <node ref="J201" pin="6"/>
+    </net>
+    <net code="32" name="POS3P3_PGOOD">
+      <node ref="U903" pin="2"/>
+      <node ref="U301" pin="4"/>
+      <node ref="R305" pin="2"/>
+    </net>
+    <net code="33" name="Net-(C301-Pad1)">
+      <node ref="U301" pin="6"/>
+      <node ref="C301" pin="1"/>
+      <node ref="R303" pin="1"/>
+    </net>
+    <net code="34" name="Net-(R303-Pad2)">
+      <node ref="R303" pin="2"/>
+      <node ref="R304" pin="1"/>
+      <node ref="U301" pin="7"/>
+    </net>
+    <net code="35" name="Net-(R301-Pad2)">
+      <node ref="R301" pin="2"/>
+      <node ref="R302" pin="1"/>
+      <node ref="U301" pin="3"/>
+    </net>
+    <net code="36" name="+12V">
+      <node ref="R301" pin="1"/>
+      <node ref="C705" pin="1"/>
+      <node ref="C302" pin="1"/>
+      <node ref="C303" pin="1"/>
+      <node ref="U301" pin="2"/>
+      <node ref="U701" pin="6"/>
+      <node ref="Q702" pin="5"/>
+    </net>
+    <net code="37" name="Net-(L301-Pad1)">
+      <node ref="L301" pin="1"/>
+      <node ref="U301" pin="1"/>
+    </net>
+    <net code="38" name="Net-(C401-Pad1)">
+      <node ref="U401" pin="3"/>
+      <node ref="C401" pin="1"/>
+      <node ref="R401" pin="1"/>
+    </net>
+    <net code="39" name="Net-(R401-Pad2)">
+      <node ref="R401" pin="2"/>
+      <node ref="SW401" pin="1"/>
+    </net>
+    <net code="40" name="Net-(C401-Pad2)">
+      <node ref="U401" pin="4"/>
+      <node ref="C401" pin="2"/>
+    </net>
+    <net code="41" name="Net-(D501-Pad1)">
+      <node ref="U501" pin="3"/>
+      <node ref="D501" pin="1"/>
+      <node ref="R503" pin="1"/>
+      <node ref="D502" pin="1"/>
+    </net>
+    <net code="42" name="Net-(D509-Pad2)">
+      <node ref="D509" pin="2"/>
+      <node ref="D511" pin="1"/>
+    </net>
+    <net code="43" name="Net-(D507-Pad2)">
+      <node ref="D507" pin="2"/>
+      <node ref="D509" pin="1"/>
+    </net>
+    <net code="44" name="Net-(D504-Pad2)">
+      <node ref="D504" pin="2"/>
+      <node ref="D507" pin="1"/>
+    </net>
+    <net code="45" name="Net-(D502-Pad2)">
+      <node ref="D502" pin="2"/>
+      <node ref="D504" pin="1"/>
+    </net>
+    <net code="46" name="Net-(D508-Pad2)">
+      <node ref="D510" pin="1"/>
+      <node ref="D508" pin="2"/>
+    </net>
+    <net code="47" name="Net-(D503-Pad2)">
+      <node ref="D506" pin="1"/>
+      <node ref="D503" pin="2"/>
+    </net>
+    <net code="48" name="Net-(D501-Pad2)">
+      <node ref="D503" pin="1"/>
+      <node ref="D501" pin="2"/>
+    </net>
+    <net code="49" name="Net-(D506-Pad2)">
+      <node ref="D506" pin="2"/>
+      <node ref="D508" pin="1"/>
+    </net>
+    <net code="50" name="Net-(C503-Pad1)">
+      <node ref="C503" pin="1"/>
+      <node ref="U501" pin="10"/>
+    </net>
+    <net code="51" name="Net-(D505-Pad2)">
+      <node ref="U501" pin="6"/>
+      <node ref="U501" pin="7"/>
+      <node ref="D505" pin="2"/>
+      <node ref="L501" pin="2"/>
+    </net>
+    <net code="52" name="Net-(C502-Pad1)">
+      <node ref="U501" pin="4"/>
+      <node ref="R501" pin="1"/>
+      <node ref="C502" pin="1"/>
+    </net>
+    <net code="53" name="Net-(C504-Pad1)">
+      <node ref="D510" pin="2"/>
+      <node ref="D505" pin="1"/>
+      <node ref="R504" pin="1"/>
+      <node ref="C504" pin="1"/>
+      <node ref="D511" pin="2"/>
+    </net>
+    <net code="54" name="Net-(R504-Pad2)">
+      <node ref="U501" pin="1"/>
+      <node ref="R505" pin="1"/>
+      <node ref="R504" pin="2"/>
+    </net>
+    <net code="55" name="Net-(R602-Pad2)">
+      <node ref="R602" pin="2"/>
+      <node ref="U601" pin="4"/>
+      <node ref="U601" pin="1"/>
+    </net>
+    <net code="56" name="Net-(Q601-Pad1)">
+      <node ref="R601" pin="2"/>
+      <node ref="U601" pin="3"/>
+      <node ref="Q601" pin="1"/>
+    </net>
+    <net code="57" name="Net-(Q702-Pad4)">
+      <node ref="R706" pin="1"/>
+      <node ref="Q702" pin="4"/>
+    </net>
+    <net code="58" name="Net-(R701-Pad2)">
+      <node ref="R702" pin="1"/>
+      <node ref="R701" pin="2"/>
+      <node ref="U701" pin="3"/>
+    </net>
+    <net code="59" name="Net-(R702-Pad2)">
+      <node ref="R703" pin="1"/>
+      <node ref="R702" pin="2"/>
+      <node ref="U701" pin="2"/>
+    </net>
+    <net code="60" name="Net-(Q701-Pad1)">
+      <node ref="Q701" pin="1"/>
+      <node ref="Q702" pin="3"/>
+      <node ref="Q701" pin="2"/>
+      <node ref="Q701" pin="3"/>
+      <node ref="Q702" pin="2"/>
+      <node ref="Q702" pin="1"/>
+    </net>
+    <net code="61" name="Net-(Q701-Pad4)">
+      <node ref="R705" pin="2"/>
+      <node ref="Q701" pin="4"/>
+    </net>
+    <net code="62" name="+12Vin">
+      <node ref="C701" pin="1"/>
+      <node ref="D701" pin="1"/>
+      <node ref="C703" pin="1"/>
+      <node ref="C702" pin="1"/>
+      <node ref="Q701" pin="5"/>
+      <node ref="U701" pin="4"/>
+      <node ref="J701" pin="1"/>
+      <node ref="R701" pin="1"/>
+      <node ref="R704" pin="1"/>
+    </net>
+    <net code="63" name="Net-(C704-Pad1)">
+      <node ref="C704" pin="1"/>
+      <node ref="R708" pin="2"/>
+    </net>
+    <net code="64" name="Net-(R704-Pad2)">
+      <node ref="R704" pin="2"/>
+      <node ref="U701" pin="8"/>
+    </net>
+    <net code="65" name="Net-(R705-Pad1)">
+      <node ref="R706" pin="2"/>
+      <node ref="U701" pin="5"/>
+      <node ref="R705" pin="1"/>
+      <node ref="R708" pin="1"/>
+    </net>
+    <net code="66" name="POS12_PGOOD">
+      <node ref="U901" pin="2"/>
+      <node ref="U701" pin="7"/>
+      <node ref="R707" pin="2"/>
+    </net>
+    <net code="67" name="Net-(J801-Pad2)">
+      <node ref="J801" pin="2"/>
+      <node ref="R801" pin="1"/>
+      <node ref="U801" pin="2"/>
+    </net>
+    <net code="68" name="Net-(D902-Pad1)">
+      <node ref="D902" pin="1"/>
+      <node ref="U902" pin="4"/>
+    </net>
+    <net code="69" name="Net-(D902-Pad2)">
+      <node ref="D902" pin="2"/>
+      <node ref="R903" pin="2"/>
+    </net>
+    <net code="70" name="Net-(D905-Pad2)">
+      <node ref="D905" pin="2"/>
+      <node ref="R908" pin="2"/>
+    </net>
+    <net code="71" name="Net-(D905-Pad1)">
+      <node ref="D905" pin="1"/>
+      <node ref="U905" pin="4"/>
+    </net>
+    <net code="72" name="Net-(D903-Pad1)">
+      <node ref="D903" pin="1"/>
+      <node ref="U903" pin="4"/>
+    </net>
+    <net code="73" name="Net-(D901-Pad1)">
+      <node ref="U901" pin="4"/>
+      <node ref="D901" pin="1"/>
+    </net>
+    <net code="74" name="Net-(D901-Pad2)">
+      <node ref="R901" pin="2"/>
+      <node ref="D901" pin="2"/>
+    </net>
+    <net code="75" name="Net-(D904-Pad2)">
+      <node ref="R907" pin="2"/>
+      <node ref="D904" pin="2"/>
+    </net>
+    <net code="76" name="Net-(D904-Pad1)">
+      <node ref="D904" pin="1"/>
+      <node ref="U904" pin="4"/>
+    </net>
+    <net code="77" name="Net-(D903-Pad2)">
+      <node ref="R904" pin="2"/>
+      <node ref="D903" pin="2"/>
+    </net>
+  </nets>
+</export>
