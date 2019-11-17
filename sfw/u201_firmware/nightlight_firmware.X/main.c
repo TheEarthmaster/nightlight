@@ -49,6 +49,9 @@
 volatile bool enable_leds_flag = false;
 volatile bool old_led_state_flag = false;
 
+uint16_t light_level_result;
+
+
 // expects value between 0 and 100
 void setLEDBrightness(uint8_t input_brightness) {
     
@@ -92,30 +95,57 @@ void fadeLEDsDown(void) {
 void capTouchPowerISR(void)
 {
     
-    INTERRUPT_GlobalInterruptDisable();
+    // Orginally for cap touch debouncing necessitated by heartbeat signal
+    // __delay_ms(250);
+    if (INTCONbits.IOCIE) {
+     
+        INTCONbits.IOCIE = 0;
+        ANALOG_ERROR_LED_PIN = 0;
+        
+        enable_leds_flag = false;
+        PIR1bits.TMR1IF = 0;
+        
+    }
     
-    __delay_ms(250);
+    else {
+     
+        INTCONbits.IOCIE = 1;
+        ANALOG_ERROR_LED_PIN = 1;
+        
+    }
+    
     
     INTCONbits.INTF = 0;
     
-    INTERRUPT_GlobalInterruptEnable();
 }
 
 void PIRSensorISR(void) {
  
-    __delay_ms(250);
-    enable_leds_flag = true;
-
-    TMR1_StopTimer();
+    // __delay_ms(250);
     
-    // clear fade away timer
-    TMR1_WriteTimer(0);
+    ADC_SelectChannel(channel_AN10);
+    ADC_StartConversion();
 
-    // start fade away timer
-    TMR1_StartTimer();
+    while(!ADC_IsConversionDone());
+    light_level_result = ADC_GetConversionResult();
+    
+    if(light_level_result >= 0x299)
+    {
+    
+        enable_leds_flag = true;
+
+        TMR1_StopTimer();
+    
+        // clear fade away timer
+        TMR1_WriteTimer(0);
+
+        // start fade away timer
+        TMR1_StartTimer();
+
+    }
     
     INTCONbits.IOCIF = 0;
-        
+     
 }
 
 void fadeAwayISR(void) {
@@ -150,9 +180,8 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    // INT_SetInterruptHandler(capTouchPowerISR);
+    INT_SetInterruptHandler(capTouchPowerISR);
     IOCBF2_SetInterruptHandler(PIRSensorISR);
-    // IOCBF2_SetInterruptHandler(fadeLEDsUp);
     TMR1_SetInterruptHandler(fadeAwayISR);
     
     RESET_LED_PIN = 0;
@@ -163,9 +192,12 @@ void main(void)
     
     LED_ENABLE_PIN = 0;
     
+    ANALOG_ERROR_LED_PIN = 1;
     
     while (1)
     {
+        
+        
         
         if(PIR_OUT_PIN == 1) {
          

@@ -2699,18 +2699,57 @@ void TMR2_LoadPeriodRegister(uint8_t periodVal);
 # 325
 bool TMR2_HasOverflowOccured(void);
 
-# 73 "mcc_generated_files/mcc.h"
+# 71 "mcc_generated_files/adc.h"
+typedef uint16_t adc_result_t;
+
+# 76
+typedef struct
+{
+adc_result_t adcResult1;
+adc_result_t adcResult2;
+} adc_sync_double_result_t;
+
+# 94
+typedef enum
+{
+channel_AN10 = 0xA,
+channel_Temp = 0x1E,
+channel_FVR = 0x1F
+} adc_channel_t;
+
+# 134
+void ADC_Initialize(void);
+
+# 164
+void ADC_SelectChannel(adc_channel_t channel);
+
+# 191
+void ADC_StartConversion();
+
+# 223
+bool ADC_IsConversionDone();
+
+# 256
+adc_result_t ADC_GetConversionResult(void);
+
+# 286
+adc_result_t ADC_GetConversion(adc_channel_t channel);
+
+# 74 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
 
-# 86
+# 87
 void OSCILLATOR_Initialize(void);
 
-# 98
+# 99
 void WDT_Initialize(void);
 
 # 49 "main.c"
 volatile bool enable_leds_flag = 0;
 volatile bool old_led_state_flag = 0;
+
+uint16_t light_level_result;
+
 
 
 void setLEDBrightness(uint8_t input_brightness) {
@@ -2755,18 +2794,44 @@ LATBbits.LATB4 = 0;
 void capTouchPowerISR(void)
 {
 
-(INTCONbits.GIE = 0);
 
-_delay((unsigned long)((250)*(16000000/4000.0)));
+
+if (INTCONbits.IOCIE) {
+
+INTCONbits.IOCIE = 0;
+LATAbits.LATA1 = 0;
+
+enable_leds_flag = 0;
+PIR1bits.TMR1IF = 0;
+
+}
+
+else {
+
+INTCONbits.IOCIE = 1;
+LATAbits.LATA1 = 1;
+
+
+}
+
 
 INTCONbits.INTF = 0;
 
-(INTCONbits.GIE = 1);
 }
 
 void PIRSensorISR(void) {
 
-_delay((unsigned long)((250)*(16000000/4000.0)));
+
+
+ADC_SelectChannel(channel_AN10);
+ADC_StartConversion();
+
+while(!ADC_IsConversionDone());
+light_level_result = ADC_GetConversionResult();
+
+if(light_level_result >= 0x299)
+{
+
 enable_leds_flag = 1;
 
 TMR1_StopTimer();
@@ -2776,6 +2841,8 @@ TMR1_WriteTimer(0);
 
 
 TMR1_StartTimer();
+
+}
 
 INTCONbits.IOCIF = 0;
 
@@ -2788,7 +2855,7 @@ PIR1bits.TMR1IF = 0;
 
 }
 
-# 130
+# 161
 void main(void)
 {
 
@@ -2797,15 +2864,15 @@ SYSTEM_Initialize();
 TMR1_StopTimer();
 TMR1_WriteTimer(0);
 
-# 142
+# 173
 (INTCONbits.GIE = 1);
 
 
 (INTCONbits.PEIE = 1);
 
-# 154
+# 184
+INT_SetInterruptHandler(capTouchPowerISR);
 IOCBF2_SetInterruptHandler(PIRSensorISR);
-
 TMR1_SetInterruptHandler(fadeAwayISR);
 
 LATAbits.LATA2 = 0;
@@ -2816,9 +2883,12 @@ _delay((unsigned long)((100)*(16000000/4000.0)));
 
 LATBbits.LATB4 = 0;
 
+LATAbits.LATA1 = 1;
 
 while (1)
 {
+
+
 
 if(PORTBbits.RB2 == 1) {
 

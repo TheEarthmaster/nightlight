@@ -56,6 +56,7 @@
 #include "tmr1.h"
 #include "ext_int.h"
 #include "tmr2.h"
+#include "adc.h"
 
 
 

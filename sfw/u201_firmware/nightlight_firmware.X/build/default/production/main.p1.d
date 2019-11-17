@@ -4,6 +4,7 @@
 pin_macros.h  \
 mcc_generated_files/mcc.h  \
 mcc_generated_files/pwm2.h  \
+mcc_generated_files/adc.h  \
 mcc_generated_files/device_config.h  \
 mcc_generated_files/ext_int.h  \
 mcc_generated_files/interrupt_manager.h  \
